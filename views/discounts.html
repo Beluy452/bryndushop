@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bryndushop</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="desktop-width">
+            <div class="top">
+                <div class="width-container flex-container">
+                    <div class="info">
+                        <a href="#">Информация о доставке, оплате и возврате товара</a>
+                    </div>
+                    <div class="number-and-languages flex-container">
+                        <div class="number">
+                            <a href="tel:+38 (050) 166-11-61">+38 (050) 166-11-61</a>
+                            <a href="tel:+38 (050) 166-11-61">+38 (050) 166-11-61</a>
+                            <a href="tel:+38 (050) 166-11-61">+38 (050) 166-11-61</a>
+                            <a href="#feedback-tell" data-toggle="modal" data-target="#feedback-tell"
+                               class="order-a-call">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i> Заказать звонок</a>
+                        </div>
+                        <div class="languages">
+                            <a href="?lan=ua" class="active">UA</a>
+                            <a href="?lan=ru">RU</a>
+                            <a href="?lan=rom">ROM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="logo">
+                    <a href="/"><img src="../img/Logo.png" alt="Bryndushop"></a>
+                </div>
+                <ul class="menu flex-container">
+                    <li><a href="aboutUs.html">о нас</a></li>
+                    <li><a href="discounts.html">скидки</a></li>
+                    <li><a href="news.html#shares">акции</a></li>
+                    <li><a href="news.html">новости</a></li>
+                </ul>
+                <div class="search-and-caret flex-container">
+                    <div class="search">
+                        <form action="">
+                            <input type="text" autocomplete="no" placeholder="Поиск товаров...">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    <a href="#" class="like-and-cart like-item">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span class="count">7</span>
+                    </a>
+                    <a href="#" class="like-and-cart go-to-cart">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        <span class="count">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-width">
+            <div class="bottom">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../img/Logo.png" alt="Bryndushop" class="hidden-480">
+                        <svg class="show-480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 496 496" xml:space="preserve" width="35px" height="50px">
+                            <path d="M496,256c0-23.176-12.312-60.704-51.968-81.304c15.184-38.304,4.536-76.864-15.016-96.4    c-15.416-15.424-38.328-25.024-61.288-25.68c-9.136-0.24-20.344,0.872-32.944,4.896C318.416,19.728,283.64,0,256,0    c-23.176,0-60.704,12.312-81.296,51.96c-38.288-15.184-76.856-4.528-96.4,15.024C62.88,82.4,53.28,105.312,52.624,128.272    c-0.256,9.112,0.848,20.328,4.888,32.952C19.72,177.584,0,212.36,0,240c0,23.176,12.312,60.704,51.96,81.296    c-15.176,38.304-4.536,76.864,15.024,96.4c15.416,15.424,38.328,25.024,61.288,25.68c0.84,0.024,1.704,0.04,2.576,0.04    c8.616,0,18.912-1.264,30.376-4.928C177.584,476.28,212.36,496,240,496c23.2,0,60.784-12.344,81.36-52.096    c12.592,4.984,25.208,7.336,37.168,7.336c24.4,0,46.064-9.112,59.168-22.224c15.424-15.416,25.024-38.328,25.68-61.288    c0.256-9.112-0.848-20.328-4.888-32.952C476.28,318.416,496,283.64,496,256z M367.272,68.608c28.12,0.808,45.712,16.272,50.432,21    c15.32,15.312,23.84,47.32,11.6,78.824C414.608,163.232,397.12,160,376,160c-34.568,0-58.76,6.056-75.544,13.72    c2.976-3.472,6.216-7.016,9.768-10.568c20.968-20.968,53.128-31.904,53.448-32.016l-5.064-15.168    c-1.464,0.488-36.008,12.176-59.696,35.872c-17.704,17.704-28.688,35.264-33.152,43.104C260.176,193.056,254.216,192,248,192    c-1.76,0-3.488,0.104-5.208,0.264c-0.936-13.288,2.872-43.76,44.8-85.688C313.552,80.616,340.4,68.032,367.272,68.608z M288,248    c0,22.056-17.944,40-40,40c-22.056,0-40-17.944-40-40c0-22.056,17.944-40,40-40C270.056,208,288,225.944,288,248z M256,16    c21.616,0,50.032,16.736,63.672,47.56c-13.52,6.496-28.184,16.496-43.392,31.704c-24.44,24.448-37.272,45.832-43.712,63.12    C232.216,153.832,232,149.032,232,144c0-29.656,15.008-60.128,15.152-60.432l-14.312-7.152C232.152,77.8,216,110.504,216,144    c0,25.064,4.672,45.256,7.056,53.936c-6.992,3.504-13.184,8.376-18.136,14.336C194.856,203.544,176,179.304,176,120    C176,37.904,226.288,16,256,16z M68.608,128.72c0.808-28.112,16.272-45.704,21-50.424c15.312-15.304,47.312-23.832,78.816-11.6    C163.232,81.392,160,98.88,160,120c0,34.568,6.048,58.752,13.72,75.544c-3.472-2.976-7.016-6.216-10.568-9.768    c-20.968-20.968-31.904-53.128-32.016-53.448l-15.176,5.064c0.488,1.464,12.184,36.008,35.872,59.696    c17.704,17.704,35.264,28.688,43.104,33.144C193.056,235.824,192,241.784,192,248c0,1.76,0.104,3.496,0.264,5.208    c-13.288,0.944-43.752-2.88-85.688-44.808C80.616,182.44,67.84,155.632,68.608,128.72z M16,240    c0-21.616,16.736-50.032,47.56-63.672c6.504,13.528,16.504,28.192,31.704,43.392c24.488,24.488,45.888,37.272,63.192,43.712    c-4.568,0.344-9.4,0.568-14.456,0.568c-29.656,0-60.128-15.008-60.432-15.16l-7.152,14.312C77.8,263.84,110.496,280,144,280    c25.064,0,45.256-4.672,53.936-7.056c3.504,6.992,8.376,13.184,14.336,18.136C203.544,301.144,179.304,320,120,320    C37.904,320,16,269.712,16,240z M128.728,427.392c-28.12-0.808-45.712-16.272-50.432-21c-15.312-15.312-23.84-47.32-11.6-78.824    C81.392,332.768,98.88,336,120,336c34.568,0,58.752-6.056,75.544-13.72c-2.976,3.464-6.216,7.016-9.768,10.568    c-20.968,20.968-53.128,31.904-53.448,32.016l5.064,15.176c1.464-0.488,36.008-12.184,59.696-35.872    c17.704-17.704,28.688-35.264,33.152-43.104c5.584,1.88,11.544,2.936,17.76,2.936c1.76,0,3.488-0.104,5.208-0.264    c0.936,13.288-2.88,43.76-44.8,85.688C182.44,415.384,155.68,427.864,128.728,427.392z M240,480    c-21.608,0-50.008-16.72-63.664-47.536c13.52-6.504,28.192-16.544,43.376-31.736c24.44-24.448,37.272-45.832,43.72-63.12    c0.344,4.56,0.568,9.36,0.568,14.392c0,29.656-15.008,60.128-15.16,60.432l14.312,7.152C263.84,418.2,280,385.504,280,352    c0-25.064-4.672-45.256-7.056-53.936c6.992-3.504,13.184-8.376,18.136-14.336C301.144,292.456,320,316.696,320,376    C320,458.096,269.712,480,240,480z M427.392,367.272c-0.808,28.12-16.272,45.712-21,50.432    c-15.304,15.312-47.296,23.848-78.824,11.6C332.768,414.608,336,397.12,336,376c0-34.568-6.056-58.76-13.72-75.544    c3.464,2.976,7.016,6.216,10.568,9.768c20.968,20.968,31.904,53.128,32.016,53.448l15.168-5.064    c-0.488-1.464-12.176-36.008-35.872-59.696c-17.704-17.704-35.264-28.688-43.104-33.152C302.944,260.176,304,254.216,304,248    c0-1.76-0.104-3.488-0.264-5.208c13.288-0.936,43.752,2.88,85.688,44.8C415.384,313.552,428.16,340.36,427.392,367.272z     M432.44,319.672c-6.504-13.528-16.504-28.192-31.704-43.392c-24.44-24.44-45.824-37.272-63.12-43.72    c4.552-0.336,9.352-0.56,14.384-0.56c29.656,0,60.128,15.008,60.432,15.16l7.152-14.312C418.2,232.16,385.496,216,352,216    c-25.064,0-45.256,4.672-53.936,7.056c-3.504-6.992-8.376-13.184-14.336-18.136C292.456,194.856,316.696,176,376,176    c82.096,0,104,50.288,104,80C480,277.616,463.264,306.032,432.44,319.672z" fill="#987ce8"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="search-and-caret flex-container">
+                    <a href="#" class="like-and-cart like-item">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span class="count">7</span>
+                    </a>
+                    <a href="#" class="like-and-cart go-to-cart">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        <span class="count">3</span>
+                    </a>
+                    <a href="#" class="like-and-cart search-link">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="like-and-cart toggle-menu">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="caret">
+            <div class="caret-container">
+                <h4 class="title-caret">корзина</h4>
+                <h5 class="count-items"><span>Товаров:</span> 3</h5>
+                <div class="item-container">
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="../img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="../img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="../img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="../img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="../img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="../img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount-and-all-price">
+                    <div class="discount">
+                        <span>скидка 2%</span>
+                        <span>350 <span class="currency">грн.</span></span>
+                    </div>
+                    <div class="all-price">
+                        <span>Всего</span>
+                        <span>3750 <span class="currency">грн.</span></span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="return-to-shopping">вернуться к покупкам</a>
+                    <a href="caret.html" class="submit-button">оформить заказ</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile">
+            <form action="">
+                <input type="text" autocomplete="no" placeholder="Поиск">
+                <button type="submit">Найти</button>
+                <a href="#" class="close-search">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 174.239 174.239" xml:space="preserve">
+                        <path d="M146.537,1.047c-1.396-1.396-3.681-1.396-5.077,0L89.658,52.849c-1.396,1.396-3.681,1.396-5.077,0L32.78,1.047
+                        c-1.396-1.396-3.681-1.396-5.077,0L1.047,27.702c-1.396,1.396-1.396,3.681,0,5.077l51.802,51.802c1.396,1.396,1.396,3.681,0,5.077
+                        L1.047,141.46c-1.396,1.396-1.396,3.681,0,5.077l26.655,26.655c1.396,1.396,3.681,1.396,5.077,0l51.802-51.802
+                        c1.396-1.396,3.681-1.396,5.077,0l51.801,51.801c1.396,1.396,3.681,1.396,5.077,0l26.655-26.655c1.396-1.396,1.396-3.681,0-5.077
+                        l-51.801-51.801c-1.396-1.396-1.396-3.681,0-5.077l51.801-51.801c1.396-1.396,1.396-3.681,0-5.077L146.537,1.047z"/>
+                    </svg>
+                </a>
+            </form>
+        </div>
+        <div class="mobile-menu">
+            <div class="background-menu">
+                <a href="#" class="close-menu">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                        <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				        306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                    </svg>
+                </a>
+                <div class="width-container-menu">
+                    <a href="/" class="logo"><img src="../img/Logo.png" alt="Bryndushop"></a>
+                    <ul class="menu">
+                        <li class="active"><a href="./catalog-of-goods.html">головки квітів</a></li>
+                        <li><a href="#">букети</a></li>
+                        <li><a href="#">звисаючі ліани</a></li>
+                        <li><a href="#">гілки</a></li>
+                        <li><a href="#">листя та інші добавки</a></li>
+                    </ul>
+                    <div class="contacts">
+                        <p class="time-of-work">ежедневно c 10:00 до 19:00</p>
+                        <a href="tel:+38 (099) 560 80 05" class="number">+38 (099) 560 80 05</a>
+                        <a href="tel:+38 (099) 560 80 05" class="number">+38 (099) 560 80 05</a>
+                        <a href="tel:+38 (099) 560 80 05" class="number">+38 (099) 560 80 05</a>
+                        <a href="mailto:bryndushop@gmail.com" class="email"><i class="fa fa-envelope"
+                                                                               aria-hidden="true"></i>
+                            bryndushop@gmail.com</a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> bryndu_shop</a>
+                    </div>
+                    <a href="#feedback-tell" data-toggle="modal" data-target="#feedback-tell"
+                       class="order-a-call">Заказать звонок</a>
+                    <div class="languages">
+                        <a href="?lan=ua" class="active">UA</a>
+                        <a href="?lan=ru">RU</a>
+                        <a href="?lan=rom">ROM</a>
+                    </div>
+                    <div class="copyright">
+                        <p>2017 All Rights Reserved Bryndushop.com.ua</p>
+                        <a class="site-management" target="_blank" href="http://www.shade-designs.com.ua">site
+                            management by shade-designs.com.ua</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offset-top-header">
+
+        <main>
+
+            <div class="discounts">
+                <div class="width-container">
+                    <h3 class="title">информация для покупателя</h3>
+                    <div class="conditions">
+                        <div class="item">
+                            <div class="title-item">
+                                <h4>Оформление заказа</h4>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 19.25 19.25" style="enable-background:new 0 0 19.25 19.25;" xml:space="preserve">
+                                        <path d="M19.006,2.97c-0.191-0.219-0.466-0.345-0.756-0.345H4.431L4.236,1.461 C4.156,0.979,3.739,0.625,3.25,0.625H1c-0.553,0-1,0.447-1,1s0.447,1,1,1h1.403l1.86,11.164c0.008,0.045,0.031,0.082,0.045,0.124     c0.016,0.053,0.029,0.103,0.054,0.151c0.032,0.066,0.075,0.122,0.12,0.179c0.031,0.039,0.059,0.078,0.095,0.112     c0.058,0.054,0.125,0.092,0.193,0.13c0.038,0.021,0.071,0.049,0.112,0.065c0.116,0.047,0.238,0.075,0.367,0.075     c0.001,0,11.001,0,11.001,0c0.553,0,1-0.447,1-1s-0.447-1-1-1H6.097l-0.166-1H17.25c0.498,0,0.92-0.366,0.99-0.858l1-7     C19.281,3.479,19.195,3.188,19.006,2.97z M17.097,4.625l-0.285,2H13.25v-2H17.097z M12.25,4.625v2h-3v-2H12.25z M12.25,7.625v2     h-3v-2H12.25z M8.25,4.625v2h-3c-0.053,0-0.101,0.015-0.148,0.03l-0.338-2.03H8.25z M5.264,7.625H8.25v2H5.597L5.264,7.625z M13.25,9.625v-2h3.418l-0.285,2H13.25z" />
+                                        <circle cx="6.75" cy="17.125" r="1.5"/>
+                                        <circle cx="15.75" cy="17.125" r="1.5"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <p>Добавьте товар в корзину, после укажите Ваше ФИО, номер телефона, службу и адрес
+                                    доставки.</p>
+                                <p>Как только мы соберем заказ, Вам придет SMS с реквизитами и сумой для оплаты.</p>
+                                <p>Отправка проходит после поступления средств насчёт или сразу наложенным платежом.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title-item">
+                                <h4>Способы Оплаты</h4>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 488.636 488.636" style="enable-background:new 0 0 488.636 488.636;" xml:space="preserve">
+                                    <path d="M384.936,125.936c7.1,0,9.1-9.6,2.7-12.5l-249.9-110.8c-15.2-6.8-33.1,0-39.9,15.3l-87.5,196.2    c-6.8,15.2,0,33.1,15.3,39.9l50.4,21.8c6.3,2.8,13.5-1.8,13.5-8.7v-83.3c0-31.9,25.9-57.8,57.8-57.8h237.6V125.936z" />
+                                    <path d="M450.336,153.136h-303.1c-16.9,0-30.6,13.7-30.6,30.6v214.1c0,16.9,13.7,30.6,30.6,30.6h40.7c-1-6-1.5-12.1-1.5-18.3    c0-7,0.7-13.8,1.9-20.5h-32.8v-102.5h286.6v102.4h-32.9c1.2,6.7,1.9,13.5,1.9,20.5c0,6.2-0.5,12.3-1.5,18.3h40.7
+                                       c16.9,0,30.6-13.7,30.6-30.6v-214C480.936,166.836,467.236,153.136,450.336,153.136z M442.136,224.036h-286.6v-32.1h286.6V224.036 z" />
+                                    <path d="M298.836,331.436c-43.4,0-78.6,35.2-78.6,78.6s35.2,78.6,78.6,78.6s78.6-35.2,78.6-78.6S342.236,331.436,298.836,331.436z     M321.436,441.036c-3.4,4.2-7.9,7-13.1,8.4c-2.3,0.6-3.3,1.8-3.2,4.2c0.1,2.3,0,4.6,0,7c0,2.1-1.1,3.2-3.1,3.2
+                                        c-2.5,0.1-5,0.1-7.5,0c-2.2,0-3.2-1.3-3.2-3.4c0-1.7,0-3.4,0-5.1c0-3.7-0.2-3.9-3.8-4.5c-4.6-0.7-9.1-1.8-13.3-3.8    c-3.3-1.6-3.7-2.4-2.7-5.9c0.7-2.6,1.4-5.2,2.2-7.7c0.9-3,1.7-3.3,4.5-1.9c4.7,2.4,9.6,3.8,14.8,4.4c3.3,0.4,6.6,0.1,9.7-1.3
+                                        c5.8-2.5,6.7-9.2,1.8-13.2c-1.7-1.4-3.5-2.4-5.5-3.2c-5.1-2.2-10.4-3.9-15.1-6.8c-7.8-4.6-12.7-11-12.1-20.5    c0.6-10.7,6.7-17.3,16.5-20.9c4-1.5,4.1-1.4,4.1-5.6c0-1.4,0-2.9,0-4.3c0.1-3.2,0.6-3.7,3.8-3.8c1,0,2,0,2.9,0
+                                        c6.8,0,6.8,0,6.8,6.8c0,4.8,0,4.8,4.8,5.5c3.6,0.6,7.1,1.6,10.5,3.1c1.9,0.8,2.6,2.1,2,4.1c-0.8,2.9-1.6,5.9-2.6,8.7    c-0.9,2.7-1.8,3.1-4.4,1.9c-5.3-2.6-10.8-3.6-16.6-3.3c-1.5,0.1-3,0.3-4.4,0.9c-5,2.2-5.9,7.8-1.6,11.2c2.2,1.7,4.6,3,7.2,4.1
+                                        c4.5,1.8,8.9,3.6,13.2,6C327.236,412.636,330.936,429.536,321.436,441.036z"/>
+                                </svg>
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <p>Оплата заказа осуществляться на реквизиты ( счёт Приватбанка ) высланные Вам в SMS.</p>
+                                <p>Так же может отправить наложенным платежом на любую сумму.</p>
+                                <p>Доставка оплачивается получателем на почте при получении посылки.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="title-item">
+                                <h4>Оформление заказа</h4>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 612.001 612.002" style="enable-background:new 0 0 612.001 612.002;" xml:space="preserve">
+                                        <path d="M599.293,116.954l-66.904-83.936c-6.319-7.929-15.906-12.548-26.047-12.548H160.551c-10.139,0-19.726,4.619-26.046,12.547   l-66.903,83.937c-6.989,8.769-12.708,25.118-12.708,37.46v61.482c5.314-8.36,13.081-14.635,22.395-17.845   c0.521-7.026,2.651-13.84,6.294-20.045c6.311-10.75,16.435-18.394,28.502-21.533c4.326-1.13,8.287-1.642,12.247-1.642   c15.955,0,30.413,8.116,38.879,20.866c2.521-0.439,5.065-0.667,7.619-0.667c7.834,0,15.237,2.154,21.686,5.866l37.059-9.639   c4.644-1.212,9.416-1.821,14.198-1.821c25.631,0,48.035,17.337,54.492,42.164l72.627,279.135   c3.789,14.563,1.675,29.729-5.937,42.708c-7.62,12.979-19.842,22.208-34.406,25.998l-32.413,8.431h272.229   c22.995,0,41.636-18.641,41.636-41.635L612,153.286C612,142.072,606.282,125.723,599.293,116.954z M89.465,116.244l22.156-27.797   h151.166l14.917-24.526H131.171l16.357-20.522c3.178-3.987,7.925-6.274,13.023-6.274h345.792c5.099,0,9.846,2.287,13.023,6.274   l16.357,20.522H386.58l8.327,24.526h160.366l22.155,27.797H89.465z M96.223,218.802l-9.345,2.431   c-9.953,2.59-15.923,12.758-13.334,22.711l0.095,0.364c2.59,9.954,12.758,15.923,22.712,13.334l79.252-20.618   c9.954-2.589,15.923-12.757,13.334-22.712l-0.095-0.364c-2.59-9.953-12.758-15.923-22.711-13.334l-9.345,2.431   c-4.993,1.299-10.095-1.696-11.394-6.689l-0.08-0.304c-3.017-11.596-14.862-18.551-26.458-15.534l-0.485,0.126   c-11.596,3.017-18.55,14.862-15.534,26.458l0.08,0.304C104.212,212.402,101.217,217.503,96.223,218.802z M121.768,192.721   c5.027-1.308,10.163,1.708,11.47,6.734c1.308,5.027-1.707,10.163-6.735,11.47c-5.027,1.307-10.162-1.708-11.47-6.734   C113.726,199.164,116.741,194.028,121.768,192.721z M238.566,479.806c0.872,3.352-1.138,6.775-4.489,7.647l-115.299,29.994   c-3.351,0.872-6.775-1.139-7.647-4.49l-1.579-6.067c-0.872-3.353,1.138-6.776,4.49-7.647l115.298-29.994   c3.352-0.872,6.775,1.139,7.647,4.489L238.566,479.806z M252.628,359.526l1.579,6.068c0.872,3.352-1.138,6.775-4.49,7.646   L91.941,414.287c-3.352,0.872-6.775-1.139-7.647-4.489l-1.579-6.069c-0.872-3.352,1.138-6.775,4.49-7.646l157.776-41.045   C248.333,354.165,251.756,356.174,252.628,359.526z M235.509,318.627L77.733,359.672c-3.352,0.871-6.775-1.139-7.647-4.49   l-1.579-6.068c-0.872-3.352,1.138-6.774,4.49-7.646l157.776-41.045c3.352-0.872,6.775,1.138,7.647,4.489l1.579,6.069   C240.871,314.331,238.861,317.755,235.509,318.627z M232.005,429.681l-127.435,33.152c-3.352,0.871-6.775-1.139-7.647-4.49   l-1.579-6.068c-0.872-3.352,1.138-6.775,4.49-7.647l127.434-33.15c3.352-0.873,6.775,1.138,7.647,4.489l1.579,6.068   C237.367,425.386,235.357,428.81,232.005,429.681z M346.709,497.026l-72.618-279.143c-4.359-16.757-21.478-26.807-38.235-22.448   l-37.004,9.627c0.875,1.807,1.601,3.715,2.126,5.729c4.421,16.996-5.588,34.045-22.22,38.372l-78.087,20.314   c-15.94,4.147-33.103-4.061-38.454-19.638c-1.008-2.934-1.553-5.883-1.709-8.788l-37.042,9.637   c-16.757,4.359-26.807,21.478-22.448,38.234l72.618,279.143c4.36,16.758,21.478,26.808,38.235,22.448l212.392-55.253   C341.019,530.901,351.069,513.783,346.709,497.026z M103.977,560.172L40.831,317.44l212.391-55.253l63.147,242.732L103.977,560.172   z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <p>Мы отправляем заказы любой удобной для Вас службой доставки, таких как:</p>
+                                <ul>
+                                    <li>Новая почта - <a href="https://novaposhta.ua/" target="_blank">novaposhta.ua</a></li>
+                                    <li> Ин-тайм - <a href="https://intime.ua/" target="_blank">intime.ua</a></li>
+                                    <li>Деливери - <a href="http://delivery-auto.com/ru-RU/GroupCompany" target="_blank">delivery-auto.com</a></li>
+                                </ul>
+                                <p>Передача товару можлива автобусом з Чернівців у ваше місто.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="conditions-text">
+                        <h4>Умови повернення та обміну товару:</h4>
+                        <p>Якщо товар не відповідає вашому уявленню перестав бути вам необхідний,
+                            ви повертаєте його чи обмінюєте повністю за ваш рахунок (тобто оплачуєте його доставку)
+                            після чого ми повернемо вам кошти</p>
+                    </div>
+                </div>
+
+                <div class="discount-system">
+                    <div class="left">
+                        <div class="width-container">
+                            <h3 class="discount-system-title">система гибких скидок</h3>
+                            <div class="percentages">
+                                <div class="item">
+                                    <p>от 2.000 грн.</p>
+                                    <span>2%</span>
+                                </div>
+                                <div class="item">
+                                    <p>от 3.000 грн.</p>
+                                    <span>3%</span>
+                                </div>
+                                <div class="item">
+                                    <p>от 5.000 грн.</p>
+                                    <span>4%</span>
+                                </div>
+                            </div>
+                            <p class="discount-system-description">Якщо Ви бажаєте отримати більшу знижку пропорційно Вашим
+                                замовленням або обговрити інші умови співробітництва
+                                <a href="#form">звяжіться з нами</a> або ж залиште свої дані і ми з Вами звяжемось:</p>
+                            <div class="contact-form">
+                                <form action="discounts.html" id="form">
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Ваш E-mail" name="email">
+                                    </div>
+                                    <div class="input-container">
+                                        <input type="text" placeholder="Ваш телефон" name="tell">
+                                    </div>
+                                    <div class="button-container">
+                                        <button type="submit" name="email">отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="width-container">
+                            <h3 class="question-title">часто задаваемые вопросы</h3>
+                            <ul class="panel-group question-list" id="accordion">
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse1"><i class="fa fa-caret-right" aria-hidden="true"></i> Какой у вас график работы?</a>
+                                    <div id="collapse1" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse2"><i class="fa fa-caret-right" aria-hidden="true"></i> Как осуществляется доставка по Украине?</a>
+                                    <div id="collapse2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse3"><i class="fa fa-caret-right" aria-hidden="true"></i> Куда и на каких условиях осуществляется доставка?</a>
+                                    <div id="collapse3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse4"><i class="fa fa-caret-right" aria-hidden="true"></i> Как я могу оплатить свой заказ?</a>
+                                    <div id="collapse4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse5"><i class="fa fa-caret-right" aria-hidden="true"></i> На сайте указано, что товара нет в наличии, можно ли его заказать?</a>
+                                    <div id="collapse5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse6"><i class="fa fa-caret-right" aria-hidden="true"></i> Как отменить заказ?</a>
+                                    <div id="collapse6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse7"><i class="fa fa-caret-right" aria-hidden="true"></i> Какие преимущества дает регистрация?</a>
+                                    <div id="collapse7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel question-item">
+                                    <a data-toggle="collapse"
+                                       data-parent="#accordion"
+                                       href="#collapse8"><i class="fa fa-caret-right" aria-hidden="true"></i> Какая гарантия, что после предоплаты заказа я его получу?</a>
+                                    <div id="collapse8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aperiam assumenda
+                                                dolorem et ipsum iure laborum magni maxime nemo numquam,
+                                                obcaecati placeat, quam sit temporibus? Maxime molestiae possimus veniam!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <div class="show-mobile-track-and-order width-container">
+        <div class="track-the-goods">
+            <h4 class="title">Отследить товар</h4>
+            <div class="track-the-goods-container">
+                <p class="select-of-delivery">выберите службу:</p>
+                <div class="services">
+                    <a href="#"><img src="../img/services/new-post.png" alt="new-post"></a>
+                    <a href="#"><img src="../img/services/intaim.png" alt="intaim"></a>
+                    <a href="#"><img src="../img/services/delivery.png" alt="delivery"></a>
+                </div>
+                <a href="#" class="more-about-delivery">подробнее о доставке</a>
+            </div>
+        </div>
+        <div class="minimum-order">
+            <div class="title flex-container">
+                <div class="icon">
+                    <svg width="62px" height="62px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 504.124 504.124" xml:space="preserve">
+                        <path style="fill:#EFC75E;" d="M0,126.622L252.062,1.378l252.062,125.243v16.542L252.062,268.406L0,143.558V126.622z"/>
+                        <path style="fill:#E7BF55;" d="M0,126.622l252.062,125.243l252.062-125.243v250.88l-252.85,125.243L0,377.503V126.622z"/>
+                        <path style="fill:#DBB551;" d="M252.062,502.352V251.866L1.575,127.409H0v250.092l251.274,125.243L252.062,502.352z"/>
+                        <path style="fill:#F7E3AF;" d="M102.794,75.815l251.668,125.243l51.2-25.206L153.206,50.61L102.794,75.815z"/>
+                        <path style="fill:#F1D999;" d="M354.462,201.059l51.2-25.206v78.769l-13.785-2.363l-14.572,17.723l-22.843-1.575
+                            C354.462,268.406,354.462,201.059,354.462,201.059z"/>
+                        <path style="fill:#F2F2F2;" d="M200.074,351.902l-85.071-42.535c-4.726-2.363-8.665,0.394-8.665,6.302v57.108
+                            c0,5.908,3.938,12.603,8.665,14.966l85.465,42.535c4.726,2.363,8.665-0.394,8.665-6.302v-57.502
+                            C208.738,360.566,204.8,354.266,200.074,351.902z M180.775,398.77l-54.351-27.175c-2.363-1.182-4.332-4.726-4.332-7.877
+                            s1.969-4.726,4.332-3.545l54.351,27.175c2.363,1.182,4.332,4.726,4.332,7.877S183.138,399.951,180.775,398.77z M188.652,379.077
+                            l-62.228-31.508c-2.363-1.182-4.332-4.726-4.332-7.877s1.969-4.726,4.332-3.545l62.228,31.508c2.363,1.182,4.332,4.726,4.332,7.877
+                            C192.985,379.077,191.015,380.258,188.652,379.077z"/>
+                    </svg>
+                </div>
+                <div class="text">
+                    <span>минимальный заказ</span>
+                    <h5>от 500 грн.</h5>
+                </div>
+            </div>
+            <div class="minimum-order-container">
+                <p class="order">При заказе:</p>
+                <ul class="price-of-order">
+                    <li>от 2000 грн - <span>2% скидки</span></li>
+                    <li>от 3000 грн - <span>3% скидки</span></li>
+                    <li>от 5000 грн - <span>4% скидки</span></li>
+                </ul>
+                <a href="#" class="more-about-discount">Подробнее о системе скидок</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top-footer">
+            <div class="logo">
+                <a href="/"><img src="../img/Logo.png" alt="Bryndushop"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="aboutUs.html">о нас</a></li>
+                <li><a href="discounts.html">скидки</a></li>
+                <li><a href="news.html#shares">акции</a></li>
+                <li><a href="news.html">новости</a></li>
+            </ul>
+            <form action="discounts.html">
+                <p>Хотите первыми узнавать о новинках и акциях?</p>
+                <div class="input-container">
+                    <input type="email" placeholder="Ваш E-mail" required>
+                    <button type="submit">подписаться</button>
+                </div>
+            </form>
+        </div>
+        <div class="contacts">
+            <ul>
+                <li><a href="tel:+38 (099) 560 80 05" class="number">+38 (099) 560 80 05</a></li>
+                <li><a href="tel:+38 (099) 560 80 05" class="number">+38 (099) 560 80 05</a></li>
+                <li><a href="tel:+38 (099) 560 80 05" class="number">+38 (099) 560 80 05</a></li>
+                <li><a href="mailto:bryndushop@gmail.com" class="email"><i class="fa fa-envelope"
+                                                                           aria-hidden="true"></i>
+                    bryndushop@gmail.com</a></li>
+                <li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> bryndu_shop</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>© 2017 All right reserved. Bryndushop.com.ua</p>
+            <p><a target="_blank" href="http://www.shade-designs.com.ua">site
+                management by shade-designs.com.ua</a></p>
+        </div>
+    </footer>
+
+</div>
+
+<div id="popupMessage">
+    <span>Message sent</span>
+</div>
+
+<div class="preload">
+    <div class="img-container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 496 496"  xml:space="preserve">
+		    <path d="M496,256c0-23.176-12.312-60.704-51.968-81.304c15.184-38.304,4.536-76.864-15.016-96.4    c-15.416-15.424-38.328-25.024-61.288-25.68c-9.136-0.24-20.344,0.872-32.944,4.896C318.416,19.728,283.64,0,256,0    c-23.176,0-60.704,12.312-81.296,51.96c-38.288-15.184-76.856-4.528-96.4,15.024C62.88,82.4,53.28,105.312,52.624,128.272    c-0.256,9.112,0.848,20.328,4.888,32.952C19.72,177.584,0,212.36,0,240c0,23.176,12.312,60.704,51.96,81.296    c-15.176,38.304-4.536,76.864,15.024,96.4c15.416,15.424,38.328,25.024,61.288,25.68c0.84,0.024,1.704,0.04,2.576,0.04    c8.616,0,18.912-1.264,30.376-4.928C177.584,476.28,212.36,496,240,496c23.2,0,60.784-12.344,81.36-52.096    c12.592,4.984,25.208,7.336,37.168,7.336c24.4,0,46.064-9.112,59.168-22.224c15.424-15.416,25.024-38.328,25.68-61.288    c0.256-9.112-0.848-20.328-4.888-32.952C476.28,318.416,496,283.64,496,256z M367.272,68.608c28.12,0.808,45.712,16.272,50.432,21    c15.32,15.312,23.84,47.32,11.6,78.824C414.608,163.232,397.12,160,376,160c-34.568,0-58.76,6.056-75.544,13.72    c2.976-3.472,6.216-7.016,9.768-10.568c20.968-20.968,53.128-31.904,53.448-32.016l-5.064-15.168    c-1.464,0.488-36.008,12.176-59.696,35.872c-17.704,17.704-28.688,35.264-33.152,43.104C260.176,193.056,254.216,192,248,192    c-1.76,0-3.488,0.104-5.208,0.264c-0.936-13.288,2.872-43.76,44.8-85.688C313.552,80.616,340.4,68.032,367.272,68.608z M288,248    c0,22.056-17.944,40-40,40c-22.056,0-40-17.944-40-40c0-22.056,17.944-40,40-40C270.056,208,288,225.944,288,248z M256,16    c21.616,0,50.032,16.736,63.672,47.56c-13.52,6.496-28.184,16.496-43.392,31.704c-24.44,24.448-37.272,45.832-43.712,63.12    C232.216,153.832,232,149.032,232,144c0-29.656,15.008-60.128,15.152-60.432l-14.312-7.152C232.152,77.8,216,110.504,216,144    c0,25.064,4.672,45.256,7.056,53.936c-6.992,3.504-13.184,8.376-18.136,14.336C194.856,203.544,176,179.304,176,120    C176,37.904,226.288,16,256,16z M68.608,128.72c0.808-28.112,16.272-45.704,21-50.424c15.312-15.304,47.312-23.832,78.816-11.6    C163.232,81.392,160,98.88,160,120c0,34.568,6.048,58.752,13.72,75.544c-3.472-2.976-7.016-6.216-10.568-9.768    c-20.968-20.968-31.904-53.128-32.016-53.448l-15.176,5.064c0.488,1.464,12.184,36.008,35.872,59.696    c17.704,17.704,35.264,28.688,43.104,33.144C193.056,235.824,192,241.784,192,248c0,1.76,0.104,3.496,0.264,5.208    c-13.288,0.944-43.752-2.88-85.688-44.808C80.616,182.44,67.84,155.632,68.608,128.72z M16,240    c0-21.616,16.736-50.032,47.56-63.672c6.504,13.528,16.504,28.192,31.704,43.392c24.488,24.488,45.888,37.272,63.192,43.712    c-4.568,0.344-9.4,0.568-14.456,0.568c-29.656,0-60.128-15.008-60.432-15.16l-7.152,14.312C77.8,263.84,110.496,280,144,280    c25.064,0,45.256-4.672,53.936-7.056c3.504,6.992,8.376,13.184,14.336,18.136C203.544,301.144,179.304,320,120,320    C37.904,320,16,269.712,16,240z M128.728,427.392c-28.12-0.808-45.712-16.272-50.432-21c-15.312-15.312-23.84-47.32-11.6-78.824    C81.392,332.768,98.88,336,120,336c34.568,0,58.752-6.056,75.544-13.72c-2.976,3.464-6.216,7.016-9.768,10.568    c-20.968,20.968-53.128,31.904-53.448,32.016l5.064,15.176c1.464-0.488,36.008-12.184,59.696-35.872    c17.704-17.704,28.688-35.264,33.152-43.104c5.584,1.88,11.544,2.936,17.76,2.936c1.76,0,3.488-0.104,5.208-0.264    c0.936,13.288-2.88,43.76-44.8,85.688C182.44,415.384,155.68,427.864,128.728,427.392z M240,480    c-21.608,0-50.008-16.72-63.664-47.536c13.52-6.504,28.192-16.544,43.376-31.736c24.44-24.448,37.272-45.832,43.72-63.12    c0.344,4.56,0.568,9.36,0.568,14.392c0,29.656-15.008,60.128-15.16,60.432l14.312,7.152C263.84,418.2,280,385.504,280,352    c0-25.064-4.672-45.256-7.056-53.936c6.992-3.504,13.184-8.376,18.136-14.336C301.144,292.456,320,316.696,320,376    C320,458.096,269.712,480,240,480z M427.392,367.272c-0.808,28.12-16.272,45.712-21,50.432    c-15.304,15.312-47.296,23.848-78.824,11.6C332.768,414.608,336,397.12,336,376c0-34.568-6.056-58.76-13.72-75.544    c3.464,2.976,7.016,6.216,10.568,9.768c20.968,20.968,31.904,53.128,32.016,53.448l15.168-5.064    c-0.488-1.464-12.176-36.008-35.872-59.696c-17.704-17.704-35.264-28.688-43.104-33.152C302.944,260.176,304,254.216,304,248    c0-1.76-0.104-3.488-0.264-5.208c13.288-0.936,43.752,2.88,85.688,44.8C415.384,313.552,428.16,340.36,427.392,367.272z     M432.44,319.672c-6.504-13.528-16.504-28.192-31.704-43.392c-24.44-24.44-45.824-37.272-63.12-43.72    c4.552-0.336,9.352-0.56,14.384-0.56c29.656,0,60.128,15.008,60.432,15.16l7.152-14.312C418.2,232.16,385.496,216,352,216    c-25.064,0-45.256,4.672-53.936,7.056c-3.504-6.992-8.376-13.184-14.336-18.136C292.456,194.856,316.696,176,376,176    c82.096,0,104,50.288,104,80C480,277.616,463.264,306.032,432.44,319.672z"></path>
+        </svg>
+    </div>
+</div>
+
+<div class="modal fade feedback-tell" id="feedback-tell" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>заказать звонок</h4>
+                <a href="#close" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="28px" height="28px" viewBox="0 0 612 612" xml:space="preserve">
+                        <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+                                    306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="modal-body">
+                <form class="feedback-tell-form">
+                    <div class="input-container">
+                        <label for="name">Имя:</label>
+                        <div class="input">
+                            <input id="name" type="text" name="userName" required>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="tell">Телефон:</label>
+                        <div class="input">
+                            <input id="tell" min="0" type="number" name="tell" required>
+                        </div>
+                    </div>
+                    <p>Ваши контактные данные в безопасности и не будут переданы
+                        третыим лицам!</p>
+                    <button type="submit">заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../libs/jq-1.12.4.js"></script>
+<script src="../js/all.js"></script>
+</body>
+</html>
+

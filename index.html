@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bryndushop</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="desktop-width">
+            <div class="top">
+                <div class="width-container flex-container">
+                    <div class="info">
+                        <a href="#">Информация о доставке, оплате и возврате товара</a>
+                    </div>
+                    <div class="number-and-languages flex-container">
+                        <div class="number">
+                            <a href="tel:+38(050)166-11-61">+38 (050) 166-11-61</a>
+                            <a href="tel:+38(050)166-11-61">+38 (050) 166-11-61</a>
+                            <a href="tel:+38(050)166-11-61">+38 (050) 166-11-61</a>
+                            <a href="#feedback-tell" data-toggle="modal" data-target="#feedback-tell"
+                               class="order-a-call">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i> Заказать звонок</a>
+                        </div>
+                        <div class="languages">
+                            <a href="?lan=ua" class="active">UA</a>
+                            <a href="?lan=ru">RU</a>
+                            <a href="?lan=rom">ROM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="logo">
+                    <a href="/"><img src="./img/Logo.png" alt="Bryndushop"></a>
+                </div>
+                <ul class="menu flex-container">
+                    <li><a href="./views/aboutUs.html">о нас</a></li>
+                    <li><a href="./views/discounts.html">скидки</a></li>
+                    <li><a href="./views/news.html#shares">акции</a></li>
+                    <li><a href="./views/news.html">новости</a></li>
+                </ul>
+                <div class="search-and-caret flex-container">
+                    <div class="search">
+                        <form action="">
+                            <input type="text" autocomplete="no" placeholder="Поиск товаров...">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    <a href="./views/favorite-goods.html" class="like-and-cart like-item">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span class="count">7</span>
+                    </a>
+                    <a href="#" class="like-and-cart go-to-cart">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        <span class="count">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-width">
+            <div class="bottom">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./img/Logo.png" alt="Bryndushop" class="hidden-480">
+                        <svg class="show-480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"   x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve" width="35px" height="50px">
+                            <path d="M496,256c0-23.176-12.312-60.704-51.968-81.304c15.184-38.304,4.536-76.864-15.016-96.4    c-15.416-15.424-38.328-25.024-61.288-25.68c-9.136-0.24-20.344,0.872-32.944,4.896C318.416,19.728,283.64,0,256,0    c-23.176,0-60.704,12.312-81.296,51.96c-38.288-15.184-76.856-4.528-96.4,15.024C62.88,82.4,53.28,105.312,52.624,128.272    c-0.256,9.112,0.848,20.328,4.888,32.952C19.72,177.584,0,212.36,0,240c0,23.176,12.312,60.704,51.96,81.296    c-15.176,38.304-4.536,76.864,15.024,96.4c15.416,15.424,38.328,25.024,61.288,25.68c0.84,0.024,1.704,0.04,2.576,0.04    c8.616,0,18.912-1.264,30.376-4.928C177.584,476.28,212.36,496,240,496c23.2,0,60.784-12.344,81.36-52.096    c12.592,4.984,25.208,7.336,37.168,7.336c24.4,0,46.064-9.112,59.168-22.224c15.424-15.416,25.024-38.328,25.68-61.288    c0.256-9.112-0.848-20.328-4.888-32.952C476.28,318.416,496,283.64,496,256z M367.272,68.608c28.12,0.808,45.712,16.272,50.432,21    c15.32,15.312,23.84,47.32,11.6,78.824C414.608,163.232,397.12,160,376,160c-34.568,0-58.76,6.056-75.544,13.72    c2.976-3.472,6.216-7.016,9.768-10.568c20.968-20.968,53.128-31.904,53.448-32.016l-5.064-15.168    c-1.464,0.488-36.008,12.176-59.696,35.872c-17.704,17.704-28.688,35.264-33.152,43.104C260.176,193.056,254.216,192,248,192    c-1.76,0-3.488,0.104-5.208,0.264c-0.936-13.288,2.872-43.76,44.8-85.688C313.552,80.616,340.4,68.032,367.272,68.608z M288,248    c0,22.056-17.944,40-40,40c-22.056,0-40-17.944-40-40c0-22.056,17.944-40,40-40C270.056,208,288,225.944,288,248z M256,16    c21.616,0,50.032,16.736,63.672,47.56c-13.52,6.496-28.184,16.496-43.392,31.704c-24.44,24.448-37.272,45.832-43.712,63.12    C232.216,153.832,232,149.032,232,144c0-29.656,15.008-60.128,15.152-60.432l-14.312-7.152C232.152,77.8,216,110.504,216,144    c0,25.064,4.672,45.256,7.056,53.936c-6.992,3.504-13.184,8.376-18.136,14.336C194.856,203.544,176,179.304,176,120    C176,37.904,226.288,16,256,16z M68.608,128.72c0.808-28.112,16.272-45.704,21-50.424c15.312-15.304,47.312-23.832,78.816-11.6    C163.232,81.392,160,98.88,160,120c0,34.568,6.048,58.752,13.72,75.544c-3.472-2.976-7.016-6.216-10.568-9.768    c-20.968-20.968-31.904-53.128-32.016-53.448l-15.176,5.064c0.488,1.464,12.184,36.008,35.872,59.696    c17.704,17.704,35.264,28.688,43.104,33.144C193.056,235.824,192,241.784,192,248c0,1.76,0.104,3.496,0.264,5.208    c-13.288,0.944-43.752-2.88-85.688-44.808C80.616,182.44,67.84,155.632,68.608,128.72z M16,240    c0-21.616,16.736-50.032,47.56-63.672c6.504,13.528,16.504,28.192,31.704,43.392c24.488,24.488,45.888,37.272,63.192,43.712    c-4.568,0.344-9.4,0.568-14.456,0.568c-29.656,0-60.128-15.008-60.432-15.16l-7.152,14.312C77.8,263.84,110.496,280,144,280    c25.064,0,45.256-4.672,53.936-7.056c3.504,6.992,8.376,13.184,14.336,18.136C203.544,301.144,179.304,320,120,320    C37.904,320,16,269.712,16,240z M128.728,427.392c-28.12-0.808-45.712-16.272-50.432-21c-15.312-15.312-23.84-47.32-11.6-78.824    C81.392,332.768,98.88,336,120,336c34.568,0,58.752-6.056,75.544-13.72c-2.976,3.464-6.216,7.016-9.768,10.568    c-20.968,20.968-53.128,31.904-53.448,32.016l5.064,15.176c1.464-0.488,36.008-12.184,59.696-35.872    c17.704-17.704,28.688-35.264,33.152-43.104c5.584,1.88,11.544,2.936,17.76,2.936c1.76,0,3.488-0.104,5.208-0.264    c0.936,13.288-2.88,43.76-44.8,85.688C182.44,415.384,155.68,427.864,128.728,427.392z M240,480    c-21.608,0-50.008-16.72-63.664-47.536c13.52-6.504,28.192-16.544,43.376-31.736c24.44-24.448,37.272-45.832,43.72-63.12    c0.344,4.56,0.568,9.36,0.568,14.392c0,29.656-15.008,60.128-15.16,60.432l14.312,7.152C263.84,418.2,280,385.504,280,352    c0-25.064-4.672-45.256-7.056-53.936c6.992-3.504,13.184-8.376,18.136-14.336C301.144,292.456,320,316.696,320,376    C320,458.096,269.712,480,240,480z M427.392,367.272c-0.808,28.12-16.272,45.712-21,50.432    c-15.304,15.312-47.296,23.848-78.824,11.6C332.768,414.608,336,397.12,336,376c0-34.568-6.056-58.76-13.72-75.544    c3.464,2.976,7.016,6.216,10.568,9.768c20.968,20.968,31.904,53.128,32.016,53.448l15.168-5.064    c-0.488-1.464-12.176-36.008-35.872-59.696c-17.704-17.704-35.264-28.688-43.104-33.152C302.944,260.176,304,254.216,304,248    c0-1.76-0.104-3.488-0.264-5.208c13.288-0.936,43.752,2.88,85.688,44.8C415.384,313.552,428.16,340.36,427.392,367.272z     M432.44,319.672c-6.504-13.528-16.504-28.192-31.704-43.392c-24.44-24.44-45.824-37.272-63.12-43.72    c4.552-0.336,9.352-0.56,14.384-0.56c29.656,0,60.128,15.008,60.432,15.16l7.152-14.312C418.2,232.16,385.496,216,352,216    c-25.064,0-45.256,4.672-53.936,7.056c-3.504-6.992-8.376-13.184-14.336-18.136C292.456,194.856,316.696,176,376,176    c82.096,0,104,50.288,104,80C480,277.616,463.264,306.032,432.44,319.672z" fill="#987ce8"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="search-and-caret flex-container">
+                    <a href="#" class="like-and-cart like-item">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span class="count">7</span>
+                    </a>
+                    <a href="./views/favorite-goods.html" class="like-and-cart go-to-cart">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                        <span class="count">3</span>
+                    </a>
+                    <a href="#" class="like-and-cart search-link">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="like-and-cart toggle-menu">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="caret">
+            <div class="caret-container">
+                <h4 class="title-caret">корзина</h4>
+                <h5 class="count-items"><span>Товаров:</span> 3</h5>
+                <div class="item-container">
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="./img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="./img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="./img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="./img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="./img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="remove-item">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                            width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                                <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				                306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                            </svg>
+                        </a>
+                        <div class="img-cont">
+                            <img src="./img/items/gvozdica.jpg" alt="гвоздика">
+                        </div>
+                        <div class="title-item">
+                            <h3>Фетровые фигурки F002 - Бантик большой 1000 шт.</h3>
+                        </div>
+                        <div class="count-item">
+                            <a href="#" class="decrement">-</a>
+                            <input class="count-display" placeholder="" value="2">
+                            <a href="#" class="increment">+</a>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-for-a-piece">310.58 <span class="currency">грн.</span></span>
+                            <span class="price-for-all-goods">620.58 <span class="currency">грн.</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount-and-all-price">
+                    <div class="discount">
+                        <span>скидка 2%</span>
+                        <span>350 <span class="currency">грн.</span></span>
+                    </div>
+                    <div class="all-price">
+                        <span>Всего</span>
+                        <span>3750 <span class="currency">грн.</span></span>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="return-to-shopping">вернуться к покупкам</a>
+                    <a href="./views/caret.html" class="submit-button">оформить заказ</a>
+                </div>
+            </div>
+        </div>
+        <div class="search-mobile">
+            <form action="">
+                <input type="text" autocomplete="no" placeholder="Поиск">
+                <button type="submit">Найти</button>
+                <a href="#" class="close-search">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 174.239 174.239" xml:space="preserve">
+                        <path d="M146.537,1.047c-1.396-1.396-3.681-1.396-5.077,0L89.658,52.849c-1.396,1.396-3.681,1.396-5.077,0L32.78,1.047
+                        c-1.396-1.396-3.681-1.396-5.077,0L1.047,27.702c-1.396,1.396-1.396,3.681,0,5.077l51.802,51.802c1.396,1.396,1.396,3.681,0,5.077
+                        L1.047,141.46c-1.396,1.396-1.396,3.681,0,5.077l26.655,26.655c1.396,1.396,3.681,1.396,5.077,0l51.802-51.802
+                        c1.396-1.396,3.681-1.396,5.077,0l51.801,51.801c1.396,1.396,3.681,1.396,5.077,0l26.655-26.655c1.396-1.396,1.396-3.681,0-5.077
+                        l-51.801-51.801c-1.396-1.396-1.396-3.681,0-5.077l51.801-51.801c1.396-1.396,1.396-3.681,0-5.077L146.537,1.047z"/>
+                    </svg>
+                </a>
+            </form>
+        </div>
+        <div class="mobile-menu">
+            <div class="background-menu">
+                <a href="#" class="close-menu">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    width="14px" height="14px" viewBox="0 0 612 612" xml:space="preserve">
+                        <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				        306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                    </svg>
+                </a>
+                <div class="width-container-menu">
+                    <a href="/" class="logo"><img src="./img/Logo.png" alt="Bryndushop"></a>
+                    <ul class="menu">
+                        <li><a href="./views/catalog-of-goods.html">головки квітів</a></li>
+                        <li><a href="#">букети</a></li>
+                        <li><a href="#">звисаючі ліани</a></li>
+                        <li><a href="#">гілки</a></li>
+                        <li><a href="#">листя та інші добавки</a></li>
+                    </ul>
+                    <div class="contacts">
+                        <p class="time-of-work">ежедневно c 10:00 до 19:00</p>
+                        <a href="tel:+38(099)5608005" class="number">+38 (099) 560 80 05</a>
+                        <a href="tel:+38(099)5608005" class="number">+38 (099) 560 80 05</a>
+                        <a href="tel:+38(099)5608005" class="number">+38 (099) 560 80 05</a>
+                        <a href="mailto:bryndushop@gmail.com" class="email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>bryndushop@gmail.com</a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> bryndu_shop</a>
+                    </div>
+                    <a href="#feedback-tell" data-toggle="modal" data-target="#feedback-tell"
+                       class="order-a-call">Заказать звонок</a>
+                    <div class="languages">
+                        <a href="?lan=ua" class="active">UA</a>
+                        <a href="?lan=ru">RU</a>
+                        <a href="?lan=rom">ROM</a>
+                    </div>
+                    <div class="copyright">
+                        <p>2017 All Rights Reserved Bryndushop.com.ua</p>
+                        <a class="site-management" target="_blank" href="http://www.shade-designs.com.ua">site
+                            management by shade-designs.com.ua</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offset-top-header width-container">
+
+        <aside>
+            <ul class="panel-group filter-menu" id="accordion">
+                <li class="panel filter-item">
+                    <a data-toggle="collapse"
+                       data-parent="#accordion"
+                       href="#collapse1">головки квітів <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="sub-list">
+                                <li><a href="./views/catalog-of-goods.html">Головка</a></li>
+                                <li><a href="#">Квітка</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="filter-item"><a href="#">звисаючі ліани</a></li>
+                <li class="filter-item"><a href="#">гілки</a></li>
+                <li class="filter-item"><a href="#">листя та інші добавки</a></li>
+                <li class="panel filter-item">
+                    <a data-toggle="collapse"
+                       data-parent="#accordion"
+                       href="#collapse2">букети <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="sub-list">
+                                <li><a href="#">Букеты маленькие</a></li>
+                                <li><a href="#">Букеты большие</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="track-the-goods">
+                <h4 class="title">Отследить товар</h4>
+                <div class="track-the-goods-container">
+                    <p class="select-of-delivery">выберите службу:</p>
+                    <div class="services">
+                        <a href="#"><img src="img/services/new-post.png" alt="new-post"></a>
+                        <a href="#"><img src="img/services/intaim.png" alt="intaim"></a>
+                        <a href="#"><img src="img/services/delivery.png" alt="delivery"></a>
+                    </div>
+                    <a href="#" class="more-about-delivery">подробнее о доставке</a>
+                </div>
+            </div>
+            <div class="minimum-order">
+                <div class="title flex-container">
+                    <div class="icon">
+                        <svg width="62px" height="62px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                        viewBox="0 0 504.124 504.124" style="enable-background:new 0 0 504.124 504.124;" xml:space="preserve">
+                            <path style="fill:#EFC75E;" d="M0,126.622L252.062,1.378l252.062,125.243v16.542L252.062,268.406L0,143.558V126.622z"/>
+                            <path style="fill:#E7BF55;" d="M0,126.622l252.062,125.243l252.062-125.243v250.88l-252.85,125.243L0,377.503V126.622z"/>
+                            <path style="fill:#DBB551;" d="M252.062,502.352V251.866L1.575,127.409H0v250.092l251.274,125.243L252.062,502.352z"/>
+                            <path style="fill:#F7E3AF;" d="M102.794,75.815l251.668,125.243l51.2-25.206L153.206,50.61L102.794,75.815z"/>
+                            <path style="fill:#F1D999;" d="M354.462,201.059l51.2-25.206v78.769l-13.785-2.363l-14.572,17.723l-22.843-1.575
+                                C354.462,268.406,354.462,201.059,354.462,201.059z"/>
+                            <path style="fill:#F2F2F2;" d="M200.074,351.902l-85.071-42.535c-4.726-2.363-8.665,0.394-8.665,6.302v57.108
+                                c0,5.908,3.938,12.603,8.665,14.966l85.465,42.535c4.726,2.363,8.665-0.394,8.665-6.302v-57.502
+                                C208.738,360.566,204.8,354.266,200.074,351.902z M180.775,398.77l-54.351-27.175c-2.363-1.182-4.332-4.726-4.332-7.877
+                                s1.969-4.726,4.332-3.545l54.351,27.175c2.363,1.182,4.332,4.726,4.332,7.877S183.138,399.951,180.775,398.77z M188.652,379.077
+                                l-62.228-31.508c-2.363-1.182-4.332-4.726-4.332-7.877s1.969-4.726,4.332-3.545l62.228,31.508c2.363,1.182,4.332,4.726,4.332,7.877
+                                C192.985,379.077,191.015,380.258,188.652,379.077z"/>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <span>минимальный заказ</span>
+                        <h5>от 500 грн.</h5>
+                    </div>
+                </div>
+                <div class="minimum-order-container">
+                    <p class="order">При заказе:</p>
+                    <ul class="price-of-order">
+                        <li>от 2000 грн - <span>2% скидки</span></li>
+                        <li>от 3000 грн - <span>3% скидки</span></li>
+                        <li>от 5000 грн - <span>4% скидки</span></li>
+                    </ul>
+                    <a href="#" class="more-about-discount">Подробнее о системе скидок</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="offset-left-aside">
+            <div class="banner-slider">
+                <div class="item-slider">
+                    <a href="./views/item.html">
+                        <img src="./img/banner/img-1.jpg" alt="img-1">
+                        <span class="title-slider">
+                            <img src="./img/Logo.png" alt="Bryndushop">
+                            <span>Flowers</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item-slider">
+                    <a href="./views/item.html">
+                        <img src="./img/banner/img-1.jpg" alt="img-1">
+                        <span class="title-slider">
+                            <img src="./img/Logo.png" alt="Bryndushop">
+                            <span>Flowers</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item-slider">
+                    <a href="./views/item.html">
+                        <img src="./img/banner/img-1.jpg" alt="img-1">
+                        <span class="title-slider">
+                            <img src="./img/Logo.png" alt="Bryndushop">
+                            <span>Flowers</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item-slider">
+                    <a href="#">
+                        <img src="./img/banner/img-1.jpg" alt="img-1">
+                        <span class="title-slider">
+                            <img src="./img/Logo.png" alt="Bryndushop">
+                            <span>Flowers</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="novelty">
+                <div class="title-category">
+                    <h4>новинки</h4>
+                </div>
+                <div class="category-slider">
+                    <div class="item">
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="./views/item.html">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular">
+                <div class="title-category">
+                    <h4>популярные</h4>
+                </div>
+                <div class="category-slider">
+                    <div class="item">
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auction">
+                <div class="title-category">
+                    <h4>акционные</h4>
+                </div>
+                <div class="category-slider">
+                    <div class="item">
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#">
+                                <span class="img-cont">
+                                    <img src="./img/items/pinyon.jpg" alt="pinyon">
+                                </span>
+                                <span>Пион с листочком 4см</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="show-mobile-track-and-order width-container">
+        <div class="track-the-goods">
+            <h4 class="title">Отследить товар</h4>
+            <div class="track-the-goods-container">
+                <p class="select-of-delivery">выберите службу:</p>
+                <div class="services">
+                    <a href="#"><img src="img/services/new-post.png" alt="new-post"></a>
+                    <a href="#"><img src="img/services/intaim.png" alt="intaim"></a>
+                    <a href="#"><img src="img/services/delivery.png" alt="delivery"></a>
+                </div>
+                <a href="#" class="more-about-delivery">подробнее о доставке</a>
+            </div>
+        </div>
+        <div class="minimum-order">
+            <div class="title flex-container">
+                <div class="icon">
+                    <svg width="62px" height="62px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 504.124 504.124" style="enable-background:new 0 0 504.124 504.124;" xml:space="preserve">
+                        <path style="fill:#EFC75E;" d="M0,126.622L252.062,1.378l252.062,125.243v16.542L252.062,268.406L0,143.558V126.622z"/>
+                        <path style="fill:#E7BF55;" d="M0,126.622l252.062,125.243l252.062-125.243v250.88l-252.85,125.243L0,377.503V126.622z"/>
+                        <path style="fill:#DBB551;" d="M252.062,502.352V251.866L1.575,127.409H0v250.092l251.274,125.243L252.062,502.352z"/>
+                        <path style="fill:#F7E3AF;" d="M102.794,75.815l251.668,125.243l51.2-25.206L153.206,50.61L102.794,75.815z"/>
+                        <path style="fill:#F1D999;" d="M354.462,201.059l51.2-25.206v78.769l-13.785-2.363l-14.572,17.723l-22.843-1.575
+                            C354.462,268.406,354.462,201.059,354.462,201.059z"/>
+                        <path style="fill:#F2F2F2;" d="M200.074,351.902l-85.071-42.535c-4.726-2.363-8.665,0.394-8.665,6.302v57.108
+                        c0,5.908,3.938,12.603,8.665,14.966l85.465,42.535c4.726,2.363,8.665-0.394,8.665-6.302v-57.502
+                        C208.738,360.566,204.8,354.266,200.074,351.902z M180.775,398.77l-54.351-27.175c-2.363-1.182-4.332-4.726-4.332-7.877
+                        s1.969-4.726,4.332-3.545l54.351,27.175c2.363,1.182,4.332,4.726,4.332,7.877S183.138,399.951,180.775,398.77z M188.652,379.077
+                        l-62.228-31.508c-2.363-1.182-4.332-4.726-4.332-7.877s1.969-4.726,4.332-3.545l62.228,31.508c2.363,1.182,4.332,4.726,4.332,7.877
+                        C192.985,379.077,191.015,380.258,188.652,379.077z"/>
+                    </svg>
+                </div>
+                <div class="text">
+                    <span>минимальный заказ</span>
+                    <h5>от 500 грн.</h5>
+                </div>
+            </div>
+            <div class="minimum-order-container">
+                <p class="order">При заказе:</p>
+                <ul class="price-of-order">
+                    <li>от 2000 грн - <span>2% скидки</span></li>
+                    <li>от 3000 грн - <span>3% скидки</span></li>
+                    <li>от 5000 грн - <span>4% скидки</span></li>
+                </ul>
+                <a href="#" class="more-about-discount">Подробнее о системе скидок</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo-text">
+        <div class="width-container">
+            <div class="text">
+                <h2><strong>Штучні</strong> <i>Квіти</i></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit,
+                    sed quia non numquam eius modi tempora
+                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <img src="./img/items/bunch-of-flowers.png" alt="картинка квітки">
+        </div>
+    </div>
+
+    <footer>
+        <div class="top-footer">
+            <div class="logo">
+                <a href="/"><img src="./img/Logo.png" alt="Bryndushop"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="./views/aboutUs.html">о нас</a></li>
+                <li><a href="./views/discounts.html">скидки</a></li>
+                <li><a href="./views/news.html#shares">акции</a></li>
+                <li><a href="./views/news.html">новости</a></li>
+            </ul>
+            <form action="index.html">
+                <p>Хотите первыми узнавать о новинках и акциях?</p>
+                <div class="input-container">
+                    <input type="email" placeholder="Ваш E-mail" required>
+                    <button type="submit">підписатися</button>
+                </div>
+            </form>
+        </div>
+        <div class="contacts">
+            <ul>
+                <li><a href="tel:+38(099)5608005" class="number">+38 (099) 560 80 05</a></li>
+                <li><a href="tel:+38(099)5608005" class="number">+38 (099) 560 80 05</a></li>
+                <li><a href="tel:+38(099)5608005" class="number">+38 (099) 560 80 05</a></li>
+                <li><a href="mailto:bryndushop@gmail.com" class="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>bryndushop@gmail.com</a></li>
+                <li><a href="#" class="instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i> bryndu_shop</a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>© 2017 All right reserved. Bryndushop.com.ua</p>
+            <p><a target="_blank" href="http://www.shade-designs.com.ua">site
+                management by shade-designs.com.ua</a></p>
+        </div>
+    </footer>
+
+</div>
+
+<div id="popupMessage">
+    <span>Message sent</span>
+</div>
+
+<div class="preload">
+    <div class="img-container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
+		    <path d="M496,256c0-23.176-12.312-60.704-51.968-81.304c15.184-38.304,4.536-76.864-15.016-96.4    c-15.416-15.424-38.328-25.024-61.288-25.68c-9.136-0.24-20.344,0.872-32.944,4.896C318.416,19.728,283.64,0,256,0    c-23.176,0-60.704,12.312-81.296,51.96c-38.288-15.184-76.856-4.528-96.4,15.024C62.88,82.4,53.28,105.312,52.624,128.272    c-0.256,9.112,0.848,20.328,4.888,32.952C19.72,177.584,0,212.36,0,240c0,23.176,12.312,60.704,51.96,81.296    c-15.176,38.304-4.536,76.864,15.024,96.4c15.416,15.424,38.328,25.024,61.288,25.68c0.84,0.024,1.704,0.04,2.576,0.04    c8.616,0,18.912-1.264,30.376-4.928C177.584,476.28,212.36,496,240,496c23.2,0,60.784-12.344,81.36-52.096    c12.592,4.984,25.208,7.336,37.168,7.336c24.4,0,46.064-9.112,59.168-22.224c15.424-15.416,25.024-38.328,25.68-61.288    c0.256-9.112-0.848-20.328-4.888-32.952C476.28,318.416,496,283.64,496,256z M367.272,68.608c28.12,0.808,45.712,16.272,50.432,21    c15.32,15.312,23.84,47.32,11.6,78.824C414.608,163.232,397.12,160,376,160c-34.568,0-58.76,6.056-75.544,13.72    c2.976-3.472,6.216-7.016,9.768-10.568c20.968-20.968,53.128-31.904,53.448-32.016l-5.064-15.168    c-1.464,0.488-36.008,12.176-59.696,35.872c-17.704,17.704-28.688,35.264-33.152,43.104C260.176,193.056,254.216,192,248,192    c-1.76,0-3.488,0.104-5.208,0.264c-0.936-13.288,2.872-43.76,44.8-85.688C313.552,80.616,340.4,68.032,367.272,68.608z M288,248    c0,22.056-17.944,40-40,40c-22.056,0-40-17.944-40-40c0-22.056,17.944-40,40-40C270.056,208,288,225.944,288,248z M256,16    c21.616,0,50.032,16.736,63.672,47.56c-13.52,6.496-28.184,16.496-43.392,31.704c-24.44,24.448-37.272,45.832-43.712,63.12    C232.216,153.832,232,149.032,232,144c0-29.656,15.008-60.128,15.152-60.432l-14.312-7.152C232.152,77.8,216,110.504,216,144    c0,25.064,4.672,45.256,7.056,53.936c-6.992,3.504-13.184,8.376-18.136,14.336C194.856,203.544,176,179.304,176,120    C176,37.904,226.288,16,256,16z M68.608,128.72c0.808-28.112,16.272-45.704,21-50.424c15.312-15.304,47.312-23.832,78.816-11.6    C163.232,81.392,160,98.88,160,120c0,34.568,6.048,58.752,13.72,75.544c-3.472-2.976-7.016-6.216-10.568-9.768    c-20.968-20.968-31.904-53.128-32.016-53.448l-15.176,5.064c0.488,1.464,12.184,36.008,35.872,59.696    c17.704,17.704,35.264,28.688,43.104,33.144C193.056,235.824,192,241.784,192,248c0,1.76,0.104,3.496,0.264,5.208    c-13.288,0.944-43.752-2.88-85.688-44.808C80.616,182.44,67.84,155.632,68.608,128.72z M16,240    c0-21.616,16.736-50.032,47.56-63.672c6.504,13.528,16.504,28.192,31.704,43.392c24.488,24.488,45.888,37.272,63.192,43.712    c-4.568,0.344-9.4,0.568-14.456,0.568c-29.656,0-60.128-15.008-60.432-15.16l-7.152,14.312C77.8,263.84,110.496,280,144,280    c25.064,0,45.256-4.672,53.936-7.056c3.504,6.992,8.376,13.184,14.336,18.136C203.544,301.144,179.304,320,120,320    C37.904,320,16,269.712,16,240z M128.728,427.392c-28.12-0.808-45.712-16.272-50.432-21c-15.312-15.312-23.84-47.32-11.6-78.824    C81.392,332.768,98.88,336,120,336c34.568,0,58.752-6.056,75.544-13.72c-2.976,3.464-6.216,7.016-9.768,10.568    c-20.968,20.968-53.128,31.904-53.448,32.016l5.064,15.176c1.464-0.488,36.008-12.184,59.696-35.872    c17.704-17.704,28.688-35.264,33.152-43.104c5.584,1.88,11.544,2.936,17.76,2.936c1.76,0,3.488-0.104,5.208-0.264    c0.936,13.288-2.88,43.76-44.8,85.688C182.44,415.384,155.68,427.864,128.728,427.392z M240,480    c-21.608,0-50.008-16.72-63.664-47.536c13.52-6.504,28.192-16.544,43.376-31.736c24.44-24.448,37.272-45.832,43.72-63.12    c0.344,4.56,0.568,9.36,0.568,14.392c0,29.656-15.008,60.128-15.16,60.432l14.312,7.152C263.84,418.2,280,385.504,280,352    c0-25.064-4.672-45.256-7.056-53.936c6.992-3.504,13.184-8.376,18.136-14.336C301.144,292.456,320,316.696,320,376    C320,458.096,269.712,480,240,480z M427.392,367.272c-0.808,28.12-16.272,45.712-21,50.432    c-15.304,15.312-47.296,23.848-78.824,11.6C332.768,414.608,336,397.12,336,376c0-34.568-6.056-58.76-13.72-75.544    c3.464,2.976,7.016,6.216,10.568,9.768c20.968,20.968,31.904,53.128,32.016,53.448l15.168-5.064    c-0.488-1.464-12.176-36.008-35.872-59.696c-17.704-17.704-35.264-28.688-43.104-33.152C302.944,260.176,304,254.216,304,248    c0-1.76-0.104-3.488-0.264-5.208c13.288-0.936,43.752,2.88,85.688,44.8C415.384,313.552,428.16,340.36,427.392,367.272z     M432.44,319.672c-6.504-13.528-16.504-28.192-31.704-43.392c-24.44-24.44-45.824-37.272-63.12-43.72    c4.552-0.336,9.352-0.56,14.384-0.56c29.656,0,60.128,15.008,60.432,15.16l7.152-14.312C418.2,232.16,385.496,216,352,216    c-25.064,0-45.256,4.672-53.936,7.056c-3.504-6.992-8.376-13.184-14.336-18.136C292.456,194.856,316.696,176,376,176    c82.096,0,104,50.288,104,80C480,277.616,463.264,306.032,432.44,319.672z"></path>
+        </svg>
+    </div>
+</div>
+
+<div class="modal fade feedback-tell" id="feedback-tell" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>заказать звонок</h4>
+                <a href="#close" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    width="28px" height="28px" viewBox="0 0 612 612" xml:space="preserve">
+                        <polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397
+				        306,341.411 576.521,611.397 612,575.997 341.459,306.011"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="modal-body">
+                <form class="feedback-tell-form">
+                    <div class="input-container">
+                        <label for="name">Имя:</label>
+                        <div class="input">
+                            <input id="name" type="text" name="userName" required>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="tell">Телефон:</label>
+                        <div class="input">
+                            <input id="tell" min="0" type="number" name="tell" required>
+                        </div>
+                    </div>
+                    <p>Ваши контактные данные в безопасности и не будут переданы
+                        третыим лицам!</p>
+                    <button type="submit">заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="libs/jq-1.12.4.js"></script>
+<script src="./js/all.js"></script>
+</body>
+</html>
+
